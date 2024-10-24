@@ -1,0 +1,23 @@
+class ControleDeAudio{
+    VolumeInicial : number = 2;
+
+    AumentarVolume() : number{ 
+       if(this.VolumeInicial >= 10 ){
+        return this.VolumeInicial
+       }else{
+        return this.VolumeInicial + 1
+       }
+    }
+
+    DiminuirVolume() : number{ 
+       if(this.VolumeInicial <= 0 ){
+        return this.VolumeInicial
+       }else{
+        return this.VolumeInicial - 1
+       }
+    }
+
+    LerVolume() {
+       return console.log(`O volume atual do seu aparelho e ${this.VolumeInicial}`)
+    }
+}
