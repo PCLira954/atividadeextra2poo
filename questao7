@@ -1,0 +1,22 @@
+#Controle de Audio Convertido para python
+
+class ControleDeAudio:
+    def __init__(self):
+        self.volume_inicial = 2  # Volume inicial é 2
+
+    def aumentar_volume(self):
+        if self.volume_inicial >= 10:
+            return self.volume_inicial
+        else:
+            self.volume_inicial += 1
+            return self.volume_inicial
+
+    def diminuir_volume(self):
+        if self.volume_inicial <= 0:
+            return self.volume_inicial
+        else:
+            self.volume_inicial -= 1
+            return self.volume_inicial
+
+    def ler_volume(self):
+        print(f"O volume atual do seu aparelho é {self.volume_inicial}")
