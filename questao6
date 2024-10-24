@@ -1,0 +1,29 @@
+class Retangulo {
+    l1: number = 0;
+    l2: number = 0;
+
+    calcularArea(): number{
+        return this.l1 * this.l2;
+    }
+
+    calcularPerimetro(): number{
+        return this.l1 + this.l2;
+    }
+    ehquadrado(){
+        if(this.l1 === this.l2){
+            console.log(" Seu retangulo na verdade e um QUADRADO!");
+        }else{
+            console.log(" Nao e quadrado...");
+        }
+    }
+}
+
+let retangul0 : Retangulo;
+retangul0 = new Retangulo();
+
+retangul0.l1 = 20;
+retangul0.l2 = 20;
+
+console.log(retangul0.calcularArea());
+console.log(retangul0.calcularPerimetro());
+retangul0.ehquadrado();
